@@ -72,7 +72,7 @@ const Services = () => {
                   alt={`${service.title} treatment at Jazmin Thai Spa`}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/50 to-foreground/20" />
                 
                 {/* Featured Badge */}
                 {service.featured && (
@@ -84,15 +84,15 @@ const Services = () => {
               </div>
 
               {/* Content Overlay */}
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-primary-foreground">
-                <div className="flex items-center gap-2 text-spa-gold-light text-sm mb-2">
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <div className="flex items-center gap-2 text-spa-gold text-sm mb-2 font-medium">
                   <Clock className="w-4 h-4" />
                   <span>{service.duration}</span>
                   <span className="mx-2">•</span>
                   <span className="font-semibold">{service.price}</span>
                 </div>
-                <h3 className="font-display text-xl md:text-2xl font-semibold mb-2">{service.title}</h3>
-                <p className={`text-primary-foreground/80 text-sm leading-relaxed ${service.featured ? "" : "line-clamp-2"}`}>
+                <h3 className="font-display text-xl md:text-2xl font-semibold mb-2 text-background">{service.title}</h3>
+                <p className={`text-background/90 text-sm leading-relaxed ${service.featured ? "" : "line-clamp-2"}`}>
                   {service.description}
                 </p>
                 
