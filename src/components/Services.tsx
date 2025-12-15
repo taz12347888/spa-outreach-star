@@ -92,7 +92,7 @@ const Services = () => {
                   <span className="font-semibold">{service.price}</span>
                 </div>
                 <h3 className="font-display text-xl md:text-2xl font-semibold mb-2 text-spa-gold text-background">{service.title}</h3>
-                <p className={`text-background/90 text-black text-sm leading-relaxed ${service.featured ? "" : "line-clamp-2"}`}>
+                <p className={`text-background/90 text-white text-sm leading-relaxed ${service.featured ? "" : "line-clamp-2"}`}>
                   {service.description}
                 </p>
                 
